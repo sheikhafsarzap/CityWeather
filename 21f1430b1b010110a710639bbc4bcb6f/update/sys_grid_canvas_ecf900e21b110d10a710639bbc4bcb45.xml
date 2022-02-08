@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA My city weather - New Tab">a0f904ae1bddc910a710639bbc4bcb86</legacy_page>
+        <name>PA My city weather - New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 18:09:50</sys_created_on>
+        <sys_id>ecf900e21b110d10a710639bbc4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA My city weather - New Tab</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sys_grid_canvas_ecf900e21b110d10a710639bbc4bcb45</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-29 18:09:50</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

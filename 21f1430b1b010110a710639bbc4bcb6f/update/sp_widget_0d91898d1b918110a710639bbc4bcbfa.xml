@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.box {
+
+-webkit-box-shadow: -9px 10px 5px 0px rgba(176,174,176,1);
+
+-moz-box-shadow: -9px 10px 5px 0px rgba(176,174,176,1);
+
+box-shadow: -9px 10px 5px 0px rgba(176,174,176,1);
+
+padding: 20px;
+
+background-color: #FFFFFF;
+  
+  color: #0c0d0c;
+
+}
+
+.row{
+  display: inline-block;
+  //display: grid;
+  //height: 100%
+}
+
+
+.weather-description{
+  //display: inline-block;
+ // clear:right;
+}
+
+.date-dayname {
+  display: inline-block;
+  font-size: 50px;
+}
+
+.date-day {
+	display: inline-block;
+  font-size: 30px;
+  padding-left: 10px;
+  color: blue;
+}
+
+
+.weather-details{
+  padding-top: 2.5%;
+  font-size: 20px;
+}
+
+.temp-view{
+  font-size: 50px;
+  color: blue;
+}
+
+.location{
+  margin-top: -10px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>current_weather</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Current Weather</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	//data.table = $sp.getValue('X_492126_weather_d_st_current_weather');
+	
+	var weather_gr = new GlideRecord("x_492126_weather_d_st_city_weather");
+	weather_gr.query();
+	while(weather_gr.next()){
+		var weather = {};
+		weather.city = weather_gr.getValue('city');
+		weather.desc = weather_gr.getValue('description');
+		weather.temp = weather_gr.getValue('temp_c');
+		weather.icon = weather_gr.getValue('icon');
+		
+		weather.windspd = weather_gr.getValue('wind_speed');
+		weather.humidity = weather_gr.getValue('humidity');
+		weather.precip = weather_gr.getValue('precipitation');
+		
+		weather.region = weather_gr.getValue('region');
+		
+		var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday','Sunday'];
+		
+		var currentdate = new GlideDate();
+		weather.date = currentdate.getByFormat("dd MMM yyyy");
+		
+		weather.day = days[currentdate.getDayOfWeekLocalTime()-1];
+		
+		
+		data.weather = weather;
+	}
+	
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-25 06:22:00</sys_created_on>
+        <sys_id>0d91898d1b918110a710639bbc4bcbfa</sys_id>
+        <sys_mod_count>111</sys_mod_count>
+        <sys_name>Current Weather</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sp_widget_0d91898d1b918110a710639bbc4bcbfa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 06:50:34</sys_updated_on>
+        <template><![CDATA[
+<div>
+  <!-- your widget template -->
+
+  <div class="box">
+
+    <div class="row">
+
+     
+      <div class="col-sm-6">
+        
+        <span class="temp-view">
+        	{{::data.weather.temp}} °C
+         </span>
+        
+        <div class="location">
+          <h2> {{::data.weather.city }}, {{::data.weather.region }} </h2>
+        </div>
+
+        <div class="weather-description">
+          <img src="{{::data.weather.icon}}">
+          {{::data.weather.desc}}
+        </div>
+          
+      </div>
+
+      <div class="col-sm-6">
+
+        <div class="row">
+          <h2 class="date-dayname">{{::data.weather.day }}</h2><span class="date-day">{{::data.weather.date }}</span>
+        </div>
+
+        <div class="row weather-details">
+          
+          <b>Wind Speed:</b> {{data.weather.windspd}} m/s
+
+          <b>Humidity:</b> {{data.weather.humidity}} %
+
+          <b>Precipitation:</b> {{data.weather.precip}} mm
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+<!--
+
+Backup
+
+<div>
+
+
+<div class="box">
+
+<div class="row">
+<div class="col-sm-4">
+<h2> {{::data.weather.city }}, {{::data.weather.region }} </h2>
+</div>
+<div class="col-sm-8">
+<div class="date-container"> 
+<h2 class="date-dayname">{{::data.weather.day }}</h2><span class="date-day">{{::data.weather.date }}</span>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+<div>
+<img src="{{::data.weather.icon}}">
+{{::data.weather.desc}}
+</div>
+
+</div>
+
+<div class="col-sm-8">
+<div class="weather-details">
+<b>Temperature:</b> {{::data.weather.temp}} °C
+
+<b>Wind Speed:</b> {{data.weather.windspd}} m/s
+
+<b>Humidity:</b> {{data.weather.humidity}} %
+
+<b>Precipitation:</b> {{data.weather.precip}} mm
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+-->]]></template>
+    </sp_widget>
+</record_update>

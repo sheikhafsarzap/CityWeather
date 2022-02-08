@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_widgets">
+    <sys_widgets action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>My city weather</name>
+        <order>100</order>
+        <renderer/>
+        <renderer_type>javascript</renderer_type>
+        <roles/>
+        <script><![CDATA[function sections() {
+    return {
+        'City Weather Stats': { 'uiPageName' : 'WeatherData'}
+		//'City Weather Stats': { 'uiPageName' : 'current_weather'}
+    };
+}
+
+function render() {
+	/*
+	var scope = gs.getCurrentScopeName();
+	scope = (scope == "rhino.global" ? "" : scope + "_");
+	gs.info('CITY_WEATHER scope'+scope);
+	
+    //var uiPageName = renderer.getPreferences().get("uiPageName");
+	var uiPageName = renderer.getPreference("uiPageName");
+	
+	gs.info('CITY_WEATHER page'+scope+uiPageName);
+	*/
+    return renderer.getRenderedPage('x_492126_weather_d_WeatherData');
+}
+
+function getEditLink() {
+    var uiPageName = renderer.getPreference('uiPageName');
+   // return 'sys_ui_page.do?sysparm_query=' + encodeURIComponent('name=' + uiPageName);
+	return 'sys_ui_page.do?sysparm_query=name=' + renderer.getPreference("uiPageName");
+}]]></script>
+        <sys_class_name>sys_widgets</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 18:45:44</sys_created_on>
+        <sys_id>8a1258221b510d10a710639bbc4bcbb3</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>My city weather</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sys_widgets_8a1258221b510d10a710639bbc4bcbb3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-30 10:47:00</sys_updated_on>
+        <top_level_category>false</top_level_category>
+    </sys_widgets>
+</record_update>

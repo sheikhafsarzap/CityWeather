@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>120</cache_ttl>
+        <name>FetchCurrentWeather</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+    // Main API:
+    //    v_table.addRow({ ... }) - adds a row to the result set
+    
+    // There are also query helper methods
+    //    v_query.getEncodedQuery() - returns encoded querystring
+    //    v_query.getCondition(field) - returns encoded querystring for the given field (includes field name, operator, and value)
+    //    v_query.getParameter(field) - returns parameter for the given field (only includes value for equality conditions)
+    //    v_query.isGet() - returns whether the query is a single get by sys_id
+    //    v_query.getSysId() - returns parameter for sys_id field
+    //    v_query.isTextSearch() - returns whether the query contains a text query parameter
+    //    v_query.getTextSearch() - returns text search query parameter (internal field name 123TEXTQUERY321)
+    //    v_query.getFirstRowWanted() - returns the first row to include
+    //    v_query.getLastRowWanted() - returns the last row to include
+  
+    // Note: You must define sys_id for each row so that forms and lists for this table work properly
+     
+    // Your code goes here
+    // v_table.addRow({...})
+	
+	try {
+		var inputs = {};
+		
+		var user_gr = new GlideRecord('sys_user');
+		user_gr.get(gs.getUserID());
+		
+		if(user_gr.getValue('city')!=null && user_gr.getValue('city')!=""){
+			inputs['city'] = user_gr.getValue('city'); // String 
+		}else{
+			var IP = gs.getSession().getClientIP().toString();
+
+			try { 
+				var r = new sn_ws.RESTMessageV2('x_492126_weather_d.FetchLocationByIP', 'Get City');
+				r.setStringParameterNoEscape('IP', IP);
+
+				var response = r.execute();
+				var responseBody = response.getBody();
+				var httpStatus = response.getStatusCode();
+				
+				var json = JSON.parse(responseBody);
+				
+				inputs['city'] = json.city;
+			}
+			catch(ex) {
+				var message = ex.message;
+			}
+		}
+	
+		var result = sn_fd.FlowAPI.getRunner().action('x_492126_weather_d.fetchweather').inForeground().withInputs(inputs).run();
+		var outputs = result.getOutputs();
+		
+		//check output for error
+		//if location not found call with default city: Bangalore
+		
+		if (outputs['__action_status__'].code == 1){
+			//error
+			inputs['city'] = 'Bangalore';
+			result = sn_fd.FlowAPI.getRunner().action('x_492126_weather_d.fetchweather').inForeground().withInputs(inputs).run();
+			outputs = result.getOutputs();
+		}
+
+		// Get Outputs:
+		// Note: outputs can only be retrieved when executing synchronously.
+		var location_name = outputs['location_name']; // String
+		var location_region = outputs['location_region']; // String
+		var location_country = outputs['location_country']; // String
+		var time_zone = outputs['time_zone']; // String
+		var temp_c = outputs['temp_c']; // String
+		var temp_f = outputs['temp_f']; // String
+		var is_day = outputs['is_day']; // String
+		var weather_description = outputs['weather_description']; // String
+		var weather_icon = outputs['weather_icon']; // String
+		
+		var wind_speed = outputs['wind_speed']; // String
+		var precipitation = outputs['precipitation']; // String
+		var humidity = outputs['humidity']; // String
+		
+		var row = {};
+		
+		row.city = location_name;
+		row.region = location_region;
+		row.time_zone = time_zone;
+		row.temp_c = temp_c;
+		row.description = weather_description;
+		row.icon = weather_icon;
+		row.wind_speed = wind_speed;
+		row.precipitation = precipitation;
+		row.humidity = humidity;
+		
+		v_table.addRow(row);
+		
+	} catch (ex) {
+		message = ex.getMessage();
+		gs.error(message);
+	}
+  })(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-24 08:44:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc5850381bd10110a710639bbc4bcbec</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>FetchCurrentWeather</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sys_script_vtable_dc5850381bd10110a710639bbc4bcbec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 06:35:40</sys_updated_on>
+        <table>x_492126_weather_d_st_city_weather</table>
+    </sys_script_vtable>
+</record_update>
