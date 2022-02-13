@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>Weather</name>
+        <order/>
+        <roles>x_492126_weather_d.current_weather_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-24 08:24:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a1454301bd10110a710639bbc4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weather</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sys_ui_application_7a1454301bd10110a710639bbc4bcbcf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-24 08:24:51</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</application>
+        <file_path/>
+        <instance_id>2ad394afdb7ef3440ae3ac44d4961959</instance_id>
+        <instance_name>dev89404</instance_name>
+        <name>sys_ui_application_7a1454301bd10110a710639bbc4bcbcf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>Weather</name><order/><roles>x_492126_weather_d.current_weather_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-24 08:24:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7a1454301bd10110a710639bbc4bcbcf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Weather</sys_name><sys_overrides/><sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package><sys_policy/><sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope><sys_update_name>sys_ui_application_7a1454301bd10110a710639bbc4bcbcf</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-24 08:24:51</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-1061821838</payload_hash>
+        <record_name>Weather</record_name>
+        <reverted_from/>
+        <source>29f1430b1b010110a710639bbc4bcb71</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-24 08:24:51</sys_created_on>
+        <sys_id>761454301bd10110a710639bbc4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e8b3016ee0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-24 08:24:51</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>7e1454303dd101108cb3d2cf7c2ef9d1</update_guid>
+        <update_guid_history>7e1454303dd101108cb3d2cf7c2ef9d1:-1061821838</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-08 11:01:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>1331c41baef449269e3f9459efc5eeb9</sys_id>
+        <sys_metadata>7a1454301bd10110a710639bbc4bcbcf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weather</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_scope_delete display_value="">0364d9d16c274008868c0284178590f9</sys_scope_delete>
+        <sys_update_name>sys_ui_application_7a1454301bd10110a710639bbc4bcbcf</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_7a1454301bd10110a710639bbc4bcbcf">761454301bd10110a710639bbc4bcbd2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-08 11:01:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

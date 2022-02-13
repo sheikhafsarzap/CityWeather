@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="DELETE">
+        <name>IP</name>
+        <order>100</order>
+        <rest_message_function display_value="Get City">8b4a23b81be94110a710639bbc4bcb23</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 10:22:46</sys_created_on>
+        <sys_id>297aa3f81be94110a710639bbc4bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_297aa3f81be94110a710639bbc4bcbd7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 10:22:46</sys_updated_on>
+        <value/>
+    </sys_rest_message_fn_param_defs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</application>
+        <file_path/>
+        <instance_id>2ad394afdb7ef3440ae3ac44d4961959</instance_id>
+        <instance_name>dev89404</instance_name>
+        <name>sys_rest_message_fn_param_defs_297aa3f81be94110a710639bbc4bcbd7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_param_defs"><sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE"><name>IP</name><order>100</order><rest_message_function display_value="Get City">8b4a23b81be94110a710639bbc4bcb23</rest_message_function><sys_class_name>sys_rest_message_fn_param_defs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-06 10:22:46</sys_created_on><sys_id>297aa3f81be94110a710639bbc4bcbd7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IP</sys_name><sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package><sys_policy/><sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope><sys_update_name>sys_rest_message_fn_param_defs_297aa3f81be94110a710639bbc4bcbd7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-06 10:22:46</sys_updated_on><value/></sys_rest_message_fn_param_defs></record_update>]]></payload>
+        <payload_hash>-334855252</payload_hash>
+        <record_name>IP</record_name>
+        <reverted_from/>
+        <source>29f1430b1b010110a710639bbc4bcb71</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 10:22:46</sys_created_on>
+        <sys_id>f8cb2ff41be94110a710639bbc4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ece8eb6cf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 10:22:46</sys_updated_on>
+        <type>HTTP Query Parameters</type>
+        <update_guid>f0cb2ff4f5e941100e13ca448688820e</update_guid>
+        <update_guid_history>f0cb2ff4f5e941100e13ca448688820e:-334855252</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 10:26:07</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_param_defs">sys_rest_message_fn_param_defs</sys_db_object>
+        <sys_id>5a849e3ccbd74cf09b03dc8f35825c40</sys_id>
+        <sys_metadata>297aa3f81be94110a710639bbc4bcbd7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_parent display_value="Get City">8b4a23b81be94110a710639bbc4bcb23</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_scope_delete display_value="">0364d9d16c274008868c0284178590f9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_param_defs_297aa3f81be94110a710639bbc4bcbd7</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_param_defs_297aa3f81be94110a710639bbc4bcbd7">f8cb2ff41be94110a710639bbc4bcb0e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 10:26:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="DELETE">
+        <canvas_page/>
+        <name>My city weather - New Tab 2</name>
+        <page/>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 16:26:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b1a87b761b654510a710639bbc4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My city weather - New Tab 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>pa_tabs_b1a87b761b654510a710639bbc4bcb5d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 16:26:56</sys_updated_on>
+    </pa_tabs>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</application>
+        <file_path/>
+        <instance_id>2ad394afdb7ef3440ae3ac44d4961959</instance_id>
+        <instance_name>dev89404</instance_name>
+        <name>pa_tabs_b1a87b761b654510a710639bbc4bcb5d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs"><pa_tabs action="INSERT_OR_UPDATE"><canvas_page/><name>My city weather - New Tab 2</name><page/><sys_class_name>pa_tabs</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-12 16:26:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b1a87b761b654510a710639bbc4bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>My city weather - New Tab 2</sys_name><sys_overrides/><sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package><sys_policy/><sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope><sys_update_name>pa_tabs_b1a87b761b654510a710639bbc4bcb5d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-12 16:26:56</sys_updated_on></pa_tabs></record_update>]]></payload>
+        <payload_hash>1802187253</payload_hash>
+        <record_name>My city weather - New Tab 2</record_name>
+        <reverted_from/>
+        <source>1f3f830e1b210110a710639bbc4bcb77</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 17:02:32</sys_created_on>
+        <sys_id>63c080071ba54510a710639bbc4bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17eeee2df740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 17:02:32</sys_updated_on>
+        <type>Tab</type>
+        <update_guid>fda87b765865451047e161543bced55e</update_guid>
+        <update_guid_history>fda87b765865451047e161543bced55e:-723074533,fda87b765865451047e161543bced55e:-723074533,fda87b765865451047e161543bced55e:-723074533</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My city weather - New Tab 2">67c080071ba54510a710639bbc4bcbf8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 17:02:32</sys_created_on>
+        <sys_db_object display_value="" name="pa_tabs">pa_tabs</sys_db_object>
+        <sys_id>1123b0aff2c14ce089ce2b25f371ae90</sys_id>
+        <sys_metadata>b1a87b761b654510a710639bbc4bcb5d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My city weather - New Tab 2</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_scope_delete display_value="">0364d9d16c274008868c0284178590f9</sys_scope_delete>
+        <sys_update_name>pa_tabs_b1a87b761b654510a710639bbc4bcb5d</sys_update_name>
+        <sys_update_version display_value="pa_tabs_b1a87b761b654510a710639bbc4bcb5d">63c080071ba54510a710639bbc4bcbf2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 17:02:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

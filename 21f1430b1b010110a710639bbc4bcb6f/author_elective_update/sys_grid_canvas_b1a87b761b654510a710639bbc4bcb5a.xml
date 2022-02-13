@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="DELETE">
+        <legacy_page display_value="PA My city weather - New Tab 2">35a87b761b654510a710639bbc4bcb57</legacy_page>
+        <name>PA My city weather - New Tab 2</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 16:26:56</sys_created_on>
+        <sys_id>b1a87b761b654510a710639bbc4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA My city weather - New Tab 2</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_update_name>sys_grid_canvas_b1a87b761b654510a710639bbc4bcb5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 16:26:56</sys_updated_on>
+    </sys_grid_canvas>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</application>
+        <file_path/>
+        <instance_id>2ad394afdb7ef3440ae3ac44d4961959</instance_id>
+        <instance_name>dev89404</instance_name>
+        <name>sys_grid_canvas_b1a87b761b654510a710639bbc4bcb5a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas"><sys_grid_canvas action="INSERT_OR_UPDATE"><legacy_page display_value="PA My city weather - New Tab 2">35a87b761b654510a710639bbc4bcb57</legacy_page><name>PA My city weather - New Tab 2</name><sys_class_name>sys_grid_canvas</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-12 16:26:56</sys_created_on><sys_id>b1a87b761b654510a710639bbc4bcb5a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PA My city weather - New Tab 2</sys_name><sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package><sys_policy/><sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope><sys_update_name>sys_grid_canvas_b1a87b761b654510a710639bbc4bcb5a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-12 16:26:56</sys_updated_on></sys_grid_canvas></record_update>]]></payload>
+        <payload_hash>-1396279572</payload_hash>
+        <record_name>PA My city weather - New Tab 2</record_name>
+        <reverted_from/>
+        <source>1f3f830e1b210110a710639bbc4bcb77</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 16:26:56</sys_created_on>
+        <sys_id>b9a87b761b654510a710639bbc4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17eeec245180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 16:26:56</sys_updated_on>
+        <type>Grid Canvas</type>
+        <update_guid>71a87b76ba6545102ff30052d0b5885c</update_guid>
+        <update_guid_history>71a87b76ba6545102ff30052d0b5885c:-1396279572</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 17:02:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas">sys_grid_canvas</sys_db_object>
+        <sys_id>22d7dbc4aad14445b27daf60ed8cdfa9</sys_id>
+        <sys_metadata>b1a87b761b654510a710639bbc4bcb5a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA My city weather - New Tab 2</sys_name>
+        <sys_package display_value="Weather Details" source="x_492126_weather_d">21f1430b1b010110a710639bbc4bcb6f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Weather Details">21f1430b1b010110a710639bbc4bcb6f</sys_scope>
+        <sys_scope_delete display_value="">0364d9d16c274008868c0284178590f9</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_b1a87b761b654510a710639bbc4bcb5a</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_b1a87b761b654510a710639bbc4bcb5a">b9a87b761b654510a710639bbc4bcb5c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 17:02:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

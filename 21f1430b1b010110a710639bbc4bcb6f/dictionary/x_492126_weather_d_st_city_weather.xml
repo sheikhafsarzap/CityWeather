@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="City weather" max_length="40" name="x_492126_weather_d_st_city_weather" sizeclass="0" type="collection">
+        <element display="true" label="City" max_length="50" name="city" type="string"/>
+        <element label="Description" max_length="100" name="description" type="string"/>
+        <element label="Humidity" max_length="10" name="humidity" type="string"/>
+        <element label="icon" max_length="1024" name="icon" type="url"/>
+        <element label="Precipitation" max_length="10" name="precipitation" type="string"/>
+        <element label="Region" max_length="50" name="region" type="string"/>
+        <element label="Temp C" max_length="10" name="temp_c" type="string"/>
+        <element label="Time zone" max_length="100" name="time_zone" type="string"/>
+        <element label="Wind speed" max_length="10" name="wind_speed" type="string"/>
+    </element>
+</database>
